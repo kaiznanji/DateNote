@@ -17,5 +17,12 @@ Install Node:
 Download packages:
 ```npm install```
 
+(ONE TIME THING) To create database run:
+ ```mongo```
+ ```use DateNote```
+
 To run server.js run ```npm run devStart```.
+
+
+                
 

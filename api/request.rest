@@ -1,0 +1,56 @@
+###
+
+GET http://localhost:5000/account/users
+
+
+###
+
+POST  http://localhost:5000/account/login
+Content-Type: application/json
+
+{
+    "name": "Yoen",
+    "password": "password"
+
+}
+
+###
+
+POST  http://localhost:5000/account/addUser
+Content-Type: application/json
+
+{
+    "name": "Yoen",
+    "password": "password"
+
+}
+
+
+###
+
+POST  http://localhost:5000/notes/createNote
+Content-Type: application/json
+
+{
+    "name": "Yoen",
+    "title": "my science note",
+    "date": "20210228",
+    "text": "my name jeff"
+
+}
+
+###
+
+DELETE  http://localhost:5000/notes/deleteNote
+Content-Type: application/json
+
+{
+    "name": "Yoen",
+    "title": "my science note"
+
+}
+
+
+###
+
+DELETE http://localhost:5000/account
