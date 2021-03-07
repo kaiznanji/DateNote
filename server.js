@@ -10,5 +10,4 @@ app.get('/', (req, res) => {
     res.render('main')
 })
 
-
 app.listen(5000)
