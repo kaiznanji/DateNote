@@ -10,8 +10,7 @@
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
-    "devStart": "nodemon server.js",
-    "start": "node server.js"
+    "devStart": "nodemon server.js"
   },
   "repository": {
     "type": "git",

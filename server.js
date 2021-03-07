@@ -1,14 +1,16 @@
 const express = require('express')
-const notes = require('./routes/notes')
 const app = express()
 
 app.set('view engine', 'ejs')
 
-app.use('/notes', notes)
-
 app.get('/', (req, res) => {
-    res.render('main')
+    const notes = [{
+        name: 'Sahir'
+    },
+    {
+        name: 'Kaiz'
+    }]
+    res.render('index', { notes : notes })
 })
-
 
 app.listen(5000)
