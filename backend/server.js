@@ -1,13 +1,19 @@
+'use strict';
+
 const express = require('express')
-const createNote = require('./routes/createNote')
 const app = express()
 const db = require('./lib/db')
 const User = db.User
 
+// Importing routes
+const notes = require('./routes/notes')
+const account = require('./routes/account')
+
 app.set('view engine', 'ejs')
 
 app.use(express.json())
-app.use('/createNote', createNote)
+app.use('/notes', notes)
+app.use('/account', account)
 
 
 app.get('/', (req, res) => {
