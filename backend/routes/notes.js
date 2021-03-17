@@ -3,6 +3,20 @@ const router = express.Router()
 const db = require('../lib/db')
 const User = db.User
 
+// For testing only right now
+router.get('/', (req, res) => {
+    res.render('calendar')
+})
+
+router.get('/', (req, res) => {
+    const notes = [{
+        name: 'Sahir'
+    },
+    {
+        name: 'Kaiz'
+    }]
+    res.render('calendar', { notes : notes })
+})
 
 router.post('/createNote', async (req, res) => {
     try {

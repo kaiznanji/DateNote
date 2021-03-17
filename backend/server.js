@@ -17,7 +17,7 @@ app.use('/account', account)
 
 
 app.get('/', (req, res) => {
-    res.send("hello world")
+    res.render("main")
 })
 
 app.listen(5000)
