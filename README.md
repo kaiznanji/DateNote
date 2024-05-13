@@ -1,5 +1,5 @@
 # DateNote
-Store your notes in a calendar.
+Store your notes in a calendar style view. Organize your courses and your life together, like never before.
 
 ## How to start (For Team Members)
 
